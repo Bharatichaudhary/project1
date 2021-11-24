@@ -1,0 +1,192 @@
+/*css reset*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    position:fixed;
+    top: 0px;
+    width: 1348px;
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+.items{
+    display: flex;
+}
+#logo{
+/*margin: 10px 34px;*/
+align-items: center;
+}
+#logo img{
+    margin: 3px 5px;
+    height: 62px;
+}
+ul{
+    display: flex;
+    font-family: sans-serif;
+}
+ul li{
+    color: bisque;
+    list-style: none;
+    font-size: 1.3rem;
+}
+ul li a{
+    color: blanchedalmond;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: block;
+    text-decoration:none;
+    border-radius: 50px;
+}
+ul li a:hover{
+    color: black;
+    background-color: white;
+}
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 625px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content: "";
+    background: url('../bag2.jpg') no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+}
+#home h1{
+    color: white;
+    text-align: center;
+    font-family: cursive;
+}
+#home p{
+    color: thistle;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: cursive;
+}
+#services{
+    margin: 15px;
+    display: flex;
+}
+#services .box{
+border:2px solid brown;
+padding: 34px;
+margin: 3px 3px;
+border-radius: 23px;
+background-color: #deb887;
+}
+.services-container{
+    text-align: center;
+}
+#services .box img{
+    height: 100px;
+    margin: auto;
+    display: block;
+}
+#contact{
+    position: relative;
+   /* margin-top: 15px;*/
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url(../contact1.jpg)no-repeat center center/cover;
+    z-index: -1;
+    opacity: 0.89;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+}
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 15px;
+    font-size: 1.1rem;
+}
+#contact-box form{
+    width: 40%;
+}
+#contact-box label{
+    font-size: 20px;
+    font-family: cursive;
+}
+footer{
+    background:black;
+    color: burlywood;
+    padding: 9px 4px;
+}
+.h-primary{
+    font-size: 3.8rem;
+    margin-top: 10px;
+    padding: 12px;
+    font-family: cursive;
+    text-align: center;
+}
+.h-secondary{
+    font-size: 1.8rem;
+    padding: 24px;
+    font-family: cursive;
+}
+.btn{
+    padding: 6px 24px;
+    border: 2px solid wheat;
+    background-color: tomato;
+    color: tan;
+    margin: 17px;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#client-section{
+height: 344px;
+position: relative;
+}
+#client-section h1{
+    text-align: center;
+}
+#client-section::before{
+    content:"";
+    background: url('../bag1.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#clients img{
+    height: 130px;
+}
+.client-items{
+    padding: 34px;
+}
+.center{
+    text-align: center;
+}
